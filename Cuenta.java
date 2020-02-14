@@ -26,10 +26,9 @@ public class Cuenta {
 	public void setTipo_cuenta(String tipo_cuenta) {
 		this.tipo_cuenta = tipo_cuenta;
 	}
-	@Override
-	public String toString() {
-		return "Cuenta [n_cuenta=" + n_cuenta + ", tipo_cuenta=" + tipo_cuenta + "]";
+
+	public void tipo_Cuenta(String tipo_Cuenta) {
+		return;
 	}
 		
 	}
-

@@ -27,7 +27,7 @@ public class Principal_cajero {
 			
 		} while (op > 4 && op < 0);
 		
-		System.out.println("INGRESE ALTERNATIVA CORRECTA");
+		//System.out.println("INGRESE ALTERNATIVA CORRECTA");
 		
 		
 		switch (op) {
@@ -50,7 +50,7 @@ public class Principal_cajero {
 			break;
 			
 		case 2:
-			System.out.println("Cliente");
+			System.out.println("|                           CLIENTE                         |\n");
 			
 			
 			System.out.println("Ingrese RUT : ");

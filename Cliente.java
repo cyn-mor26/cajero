@@ -76,15 +76,24 @@ public class Cliente extends Cuenta {
 			this.saldo = saldo + deposito;
 			// Me imprime lo abonado y el saldo final
 			System.out.println("se ha realizado un deposito de : " + deposito + " a su tarjeta. " + "Saldo final $" + saldo + ".");
-
 		}
 	}
+	public int consultaSaldo(int saldo) {
+		return saldo;
+	}
+		
 	public void girarDinero(int giro) {
 			if (giro>saldo ) {
 			this.saldo=saldo-giro;
 			System.out.println("Lo sentimos, no cuenta con saldo suficiente. "
 									+saldo+".");
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [rut=" + rut + ", nombre=" + nombre + ", apellidos=" + apellidos + ", clave=" + clave
+				+ ", saldo=" + saldo + ", retiro=" + retiro + "]";
 	}
 	
 }

@@ -29,6 +29,7 @@ public class Cuenta {
 
 	public void tipo_Cuenta(String tipo_Cuenta) {
 		return;
+		
 	}
 		
 	}

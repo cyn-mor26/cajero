@@ -8,11 +8,11 @@ public class Principal_cajero {
 	
 	public static void main(String args[]){
 	
-	Cliente usur  = new Cliente("String n_cuenta", " tipo_cuenta","rut","nombre", " apellidos"," clave",000000,0000000);
+	Cliente usur  = new Cliente("String n_cuenta", " tipo_cuenta","rut","nombre", " apellidos"," clave",000000,0000000,000000);
 //Arreglo 1
 		// String[][] Clientenuevo = new String [10][6];
 	 
-		int op, deposito;
+		int op,op2, deposito = 0;
 		String adm, pass;
 		
 		//menu principal
@@ -25,7 +25,7 @@ public class Principal_cajero {
 			System.out.println("                                                ~ 3 SALIR ~ ");
 			op = sc.nextInt();
 			
-		} while (op > 4 && op < 0);
+		} while (op > 4 || op < 0);
 		
 		//System.out.println("INGRESE ALTERNATIVA CORRECTA");
 		
@@ -67,17 +67,21 @@ public class Principal_cajero {
 								+ "2.Girar\n"
 								+ "3.Consulta saldo\n"
 								+ "4.Movimientos recientes\n");
-			} while (op >= 4 || op < 0);
+			op2 = sc.nextInt();
+			
+			} while (op2 <4 || op2 > 0);
 			System.out.println("Intentalo denuevo");
 			
-			switch (op) {
+			switch (op2) {
 			
-			case 4:
+			case 1:
+				int saldo = 0;
+				System.out.println("Ingrese monto a depositar : " + deposito +"." + "Saldo final $" + saldo + ".");
 					deposito= sc.nextInt();
 					usur.depositoDinero(deposito);
 			
 				break;
-			case 5:
+			case 2:
 			
 				break;
 			//Retirar
@@ -86,7 +90,7 @@ public class Principal_cajero {
 			// Mostrar ultimos movimientos
 
 			
-		case 6:
+		case 3:
 			System.out.println("SALIR");
 			break;
 			

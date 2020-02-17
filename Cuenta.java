@@ -2,34 +2,47 @@ package Cajero;
 
 public class Cuenta {
 	//atributos
-
-	private String n_cuenta;
-	private String tipo_cuenta;
-
-	public Cuenta(String n_cuenta, String tipo_cuenta) {
-		
-
-		this.n_cuenta = n_cuenta;
-		this.tipo_cuenta = tipo_cuenta;
-		
-		
-	}
-	public String getN_cuenta() {
-		return n_cuenta;
-	}
-	public void setN_cuenta(String n_cuenta) {
-		this.n_cuenta = n_cuenta;
-	}
-	public String getTipo_cuenta() {
-		return tipo_cuenta;
-	}
-	public void setTipo_cuenta(String tipo_cuenta) {
-		this.tipo_cuenta = tipo_cuenta;
+	private String rut;
+	private String nombres;
+	private String apellidos;
+	private String clave = "1234";
+	
+	public Cuenta() {
+		super();
 	}
 
-	public void tipo_Cuenta(String tipo_Cuenta) {
-		return;
-		
+	public String getRut() {
+		return rut;
 	}
-		
+
+	public void setRut(String rut) {
+		this.rut = rut;
 	}
+
+	public String getNombres() {
+		return nombres;
+	}
+
+	public void setNombres(String nombres) {
+		this.nombres = nombres;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getClave() {
+		return clave;
+	}
+
+	public void setClave(String clave) {
+		this.clave = clave;
+	}
+	
+}
+	
+
